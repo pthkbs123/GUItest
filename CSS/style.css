@@ -76,9 +76,9 @@ body {
 }
 
 .metropolitan button{
-    width: 112px;
-    height: 30px;
-/*    opacity: 0;*/
+    width: 114px;
+    height: 31px;
+    opacity: 0.8; 
 }
 
 .서울{
@@ -115,4 +115,50 @@ body {
     position: absolute;
     top: 795px;
     left: 805px;
+}
+
+.state button{
+    width: 90px;
+    height: 40px;
+    opacity: 0;
+}
+.경기도{
+    position: absolute;
+    top: 372px;
+    left: 355px;
+}
+.강원도{
+    position: absolute;
+    top: 293px;
+    left: 495px;
+}
+.충청남도{
+    position: absolute;
+    top: 525px;
+    left: 314px;
+}
+.충청북도{
+    position: absolute;
+    top: 455px;
+    left: 428px;
+}
+.경상북도{
+    position: absolute;
+    top: 538px;
+    left: 553px;
+}
+.경상남도{
+    position: absolute;
+    top: 740px;
+    left: 497px;
+}
+.전라북도{
+    position: absolute;
+    top: 673px;
+    left: 350px;
+}
+.전라남도{
+    position: absolute;
+    top: 815px;
+    left: 320px;
 }
