@@ -6,6 +6,8 @@ const end = document.querySelector('.end');
 const distance = document.querySelector('distance');
 const time = document.querySelector('.time');
 
+const inner_seo = document.querySelector('.inner_seo')
+
 function click_start_button(){
     if (start.value == ""){
         
@@ -24,4 +26,9 @@ function click_start_button(){
 
 function inner_seo(){
     document.getElementById("start").innerHTML = '서울광역시';
+}
+
+function changeBtnName() {
+  const btnElement = document.getElementById('btn');
+  btnElement.innerText = '새이름!';
 }

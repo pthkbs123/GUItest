@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width">
     <title>GUI PROJECT</title>
     <link href="CSS/style.css" rel="stylesheet"/>
-    <link href="js/script.js" rel="stylesheet"/>
 </head>
- <body>
-    
+ <body>     
+     
     <div class="chu_title">
-        
         <h>추석 귀성길 거리 계산기</h>
     </div>
     <img class="moon" src="img/moon.png">
@@ -23,20 +21,19 @@
             <h class='q_title'>당신이 이번 추석에 귀성하는 곳은?</h>
             <p class="q_input">올해 추석 귀성지는  
                 <span id="start"></span> 에서  
-                <span class="end">test</span> 으로 간다면?</p>
+                <span id="end">test</span> 으로 간다면?</p>
         </div>    
         <button class="start_b">거리 계산하기!</button>
         <div class="answer">
             <p class="result"> 
                 <span id="start"> </span> 에서 
-                <span class="end">test</span> 의 거리는 <br>
+                <span id="end">test</span> 의 거리는 <br>
                 <span class="distance">test</span> 이고, 거리 상 시간은 약 <br>
                 <span class="time">test</span> 시간 걸릴 예정입니다.</p>
         </div>
      </div>
     <div class="map_button">
         <div class="metropolitan">
-            <input type="button" value="버튼" onClick='inner_seo()'>
             <button class="서울" onclick="inner_seo()">서울</button>
             <button class="인천">인천</button>
             <button class="대전">대전</button>
@@ -57,5 +54,12 @@
         </div>
     </div>
      
+    <button 
+      id='btn' 
+      onclick='changeBtnName()'> 
+      클릭!! 
+    </button>
+     
+     <script type="text/javascript" src="js/script.js"> </script> 
 </body>
 </html>
