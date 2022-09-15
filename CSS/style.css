@@ -52,12 +52,41 @@ body {
     font-family: 'MabinogiClassicR';
     font-size: 30px;
     cursor: pointer;
+    
+    background: linear-gradient(
+        45deg,
+        #F0FFFF,
+        #ADD8E6,
+        #96DED1,
+        #40E0D0,
+        #0096FF,
+        #0000FF
+    );
+    background-size: 300% 300%;
+}
+
+.start_b:hover{
+    transform: scale(1.2);
+    animation: change_color 3s ease infinite;
+}
+
+@keyframes change_color{
+    0% {
+        background-position: 0% 50%;  
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
 }
 
 .answer{
     display: none;
     font-size: 40px;
-    margin-left: 280px;
+    margin-left: 265px;
 }
 
 .moon{
@@ -179,4 +208,8 @@ body {
     top: 815px;
     left: 320px;
     cursor: pointer;
+}
+
+footer{
+    text-align: end;
 }
