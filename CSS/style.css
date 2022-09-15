@@ -211,5 +211,8 @@ body {
 }
 
 footer{
+    margin-top: 300px;
+    margin-left: 1600px;
     text-align: end;
+    position: absolute;
 }
