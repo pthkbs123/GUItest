@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>GUI PROJECT</title>
     <link href="CSS/style.css" rel="stylesheet"/>
+    <link href="img/favicon-16x16.png" rel="icon" type="image/x-icon" sizes="16x16"/>
 </head>
  <body>     
      
@@ -21,45 +22,39 @@
             <h class='q_title'>당신이 이번 추석에 귀성하는 곳은?</h>
             <p class="q_input">올해 추석 귀성지는  
                 <span id="start"></span> 에서  
-                <span id="end">test</span> 으로 간다면?</p>
+                <span id="end"></span> 으로 간다면?</p>
         </div>    
         <button class="start_b">거리 계산하기!</button>
         <div class="answer">
             <p class="result"> 
-                <span id="start"> </span> 에서 
-                <span id="end">test</span> 의 거리는 <br>
-                <span class="distance">test</span> 이고, 거리 상 시간은 약 <br>
-                <span class="time">test</span> 시간 걸릴 예정입니다.</p>
+                <span id="start_r"></span> 에서 
+                <span id="end_r"></span> 의 거리는 <br>
+                <span id="distance"></span> 이고, 거리 상 시간은 약 <br>
+                <span id="time"></span> 시간 걸릴 예정입니다.</p>
         </div>
      </div>
     <div class="map_button">
         <div class="metropolitan">
             <button class="서울" onclick="inner_seo()">서울</button>
-            <button class="인천">인천</button>
-            <button class="대전">대전</button>
-            <button class="광주">광주</button>
-            <button class="대구">대구</button>
-            <button class="울산">울산</button>
-            <button class="부산">부산</button>
+            <button class="인천" onclick="inner_inc()">인천</button>
+            <button class="대전" onclick="inner_daj()">대전</button>
+            <button class="광주" onclick="inner_kwa()">광주</button>
+            <button class="대구" onclick="inner_dae()">대구</button>
+            <button class="울산" onclick="inner_ull()">울산</button>
+            <button class="부산" onclick="inner_buu()">부산</button>
         </div>
         <div class="state">
-            <button class="경기도">경기도</button>
-            <button class="강원도">강원도</button>
-            <button class="충청남도">충청남도</button>
-            <button class="충청북도">충청북도</button>
-            <button class="경상북도">경상북도</button>
-            <button class="경상남도">경상남도</button>
-            <button class="전라북도">전라북도</button>
-            <button class="전라남도">전라남도</button>
+            <button class="경기도" onclick="inner_gie()">경기도</button>
+            <button class="강원도" onclick="inner_kag()">강원도</button>
+            <button class="충청남도" onclick="inner_chn()">충청남도</button>
+            <button class="충청북도" onclick="inner_chb()">충청북도</button>
+            <button class="경상북도" onclick="inner_kib()">경상북도</button>
+            <button class="경상남도" onclick="inner_kin()">경상남도</button>
+            <button class="전라북도" onclick="inner_jeb()">전라북도</button>
+            <button class="전라남도" onclick="inner_jen()">전라남도</button>
         </div>
     </div>
-     
-    <button 
-      id='btn' 
-      onclick='changeBtnName()'> 
-      클릭!! 
-    </button>
-     
+          
      <script type="text/javascript" src="js/script.js"> </script> 
 </body>
 </html>
